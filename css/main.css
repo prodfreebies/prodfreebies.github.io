@@ -136,21 +136,25 @@ a {
    text-decoration: none;
 }
 
-a:link {
-   color: white;
+a:not(.orange-hover):link {
+   color: #9ecce2;
 }
 
-a:visited {
-   color: white;
+a:not(.orange-hover):visited {
+   color: #9ecce2;
 }
 
-a:hover {
+a:not(.orange-hover):hover {
    color: rgb(28, 164, 255);
    text-decoration: underline;
 }
 
-a:active {
-   color: white;
+a:not(.orange-hover):active {
+   color: #9ecce2;
+}
+
+.orange-hover {
+   color: #e3dcf3;
 }
 
 .orange-hover:hover {
