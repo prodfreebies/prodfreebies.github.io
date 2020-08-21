@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css2?family=Abel:700);
-
-
 #wrapper{
     position: relative;
     width: 98vw;
@@ -34,7 +31,7 @@
 body {
    color: white;
    text-align: center;
-   font-family: 'Abel', sans-serif;
+   font-family: Arial, sans-serif;
    background-color: black;
 }
 
@@ -159,9 +156,4 @@ a:not(.orange-hover):active {
 
 .orange-hover:hover {
    color: rgb(241, 144, 32);
-}
-
-#myVideo {
-    width: 100%;
-    overflow-x: hidden;
 }
