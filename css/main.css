@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css2?family=Abel:700);
 
 
 #wrapper{
@@ -34,8 +34,7 @@
 body {
    color: white;
    text-align: center;
-   font-family: Oswald, sans-serif;
-   text-transform: uppercase;
+   font-family: 'Abel', sans-serif;
    background-color: black;
 }
 
@@ -133,6 +132,10 @@ div>[href=''] {
    content: 'Launching in '
 }
 
+a {
+   text-decoration: none;
+}
+
 a:link {
    color: white;
 }
@@ -142,15 +145,16 @@ a:visited {
 }
 
 a:hover {
-   color: white;
+   color: rgb(34, 156, 236);
+   text-decoration: underline;
 }
 
 a:active {
    color: white;
 }
 
-.blue {
-   color: #489ec9
+.orange-hover:hover {
+   color: rgb(241, 144, 32);
 }
 
 #myVideo {
