@@ -1,0 +1,21 @@
+> **Table of Contents**
+
+**DAW (aka music software)**
+Just kidding, the best free one is [Waveform Free](https://www.tracktion.com/products/waveform-free)
+
+**Effect Plugins**
+• Modulation (chorus, tremolo, flanger, phaser)
+• Time based (reverb, delay/echo)
+• Spectral (EQ, panning/spatial)
+• Dynamic (compression, distortion)
+• Filters
+
+**Instrument Plugins**
+• Bundles
+• Acoustic instruments
+• Sampler
+• Rompler
+• Subtractive synth
+• FM synth
+• Modular synth
+• Weird stuff
