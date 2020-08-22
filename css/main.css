@@ -1,31 +1,32 @@
-#wrapper{
-    position: relative;
-    width: 98vw;
-    height: 98vh;
+#wrapper {
+   position: relative;
+   width: 98vw;
+   height: 98vh;
 }
 
-.content{
-    width: 100%;
-    position: relative;
-    z-index: 100;
+.content {
+   width: 100%;
+   position: relative;
+   z-index: 100;
 }
 
-.background{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -100;
+.background {
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -100;
 }
+
 .background::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   content: '';
 
-    background-color: rgba(0,0,0,0.7);
+   background-color: rgba(0, 0, 0, 0.7);
 }
 
 body {
@@ -156,4 +157,8 @@ a:not(.orange-hover):active {
 
 .orange-hover:hover {
    color: rgb(241, 144, 32);
+}
+
+.sub-header {
+   color: #bbb;
 }
