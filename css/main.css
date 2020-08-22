@@ -162,3 +162,17 @@ a:not(.orange-hover):active {
 .sub-header {
    color: #bbb;
 }
+
+
+::-webkit-scrollbar-track {
+	background-color: black;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #f5f5f5;
+}
