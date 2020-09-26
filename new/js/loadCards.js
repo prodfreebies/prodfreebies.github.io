@@ -14,6 +14,22 @@ const pluginTemplate = (cardTxt, imgSrc, cardHref, cardTitle) => `
         </div>
     </div>`;
 
+const defaultTemplate = (cardTxt, imgSrc, cardHref, cardTitle) => `
+    <div class="mx-auto col-md-4 d-flex align-items-stretch mb-4">
+        <div class="card">
+            <a href="${cardHref}">
+                <img class="card-img-top img-raised" src="${imgSrc}">
+            </a>
+            <div class="card-body">
+                <a href="${cardHref}" class="card-title mb-2">
+                    <h5>${cardTitle}</h5>
+                </a>
+                <p class="card-text">${cardTxt} <a href="${cardHref}">Learn more</a>
+                </p>
+            </div>
+        </div>
+    </div>`;
+
 function loadCards(template, inputFile, dataSelector, outputSelector) {
     var htmlInput = $.ajax({
         url: inputFile,
@@ -31,7 +47,10 @@ function loadCards(template, inputFile, dataSelector, outputSelector) {
             const cardHref = div.querySelector('a').href;
             const cardTitle = div.querySelector('h1').innerHTML;
             // storing in newHTML variable here
-            newHTML += template(cardTxt, imgSrc, cardHref, cardTitle);
+            if (inputFile === "data/instruments.html" || inputFile === "data/effects.html")
+                newHTML += pluginTemplate(cardTxt, imgSrc, cardHref, cardTitle);
+            else
+            newHTML += defaultTemplate(cardTxt, imgSrc, cardHref, cardTitle);
         });
 
         newHTML = '<div class="row">' + newHTML + '</div>';
@@ -60,7 +79,6 @@ $(document).ready(function () {
         catHeaders[i].setAttribute("area-expanded", "false");
         catHeaders[i].setAttribute("href", "#" + catHeaders[i].getAttribute("aria-controls"));
         catHeaders[i].innerHTML = catHeaders[i].innerHTML + " <i class=\"fa fa-angle-down rotate-icon\"></i>";
-
         orig_html = catHeaders[i].innerHTML;
         new_html = "<p>" + orig_html + "</p>";
         catHeaders[i].innerHTML = new_html;
