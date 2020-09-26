@@ -1,5 +1,5 @@
 const pluginTemplate = (cardTxt, imgSrc, cardHref, cardTitle) => `
-    <div class="mx-auto col-md-4 d-flex align-items-stretch mb-4">
+    <div class="mx-auto col-md-6 d-flex align-items-stretch mb-4">
         <div class="card">
             <a href="${cardHref}">
                 <img class="card-img-top img-raised" src="${imgSrc}">
@@ -54,6 +54,7 @@ $(document).ready(function () {
     // Initialize properties for category header dropdowns
     var catHeaders = document.getElementsByClassName('category-header');
     for (var i = 0; i < catHeaders.length; i++) {
+        catHeaders[i].classList.add(["row", "d-flex", "justify-content-center"]);
         catHeaders[i].setAttribute("data-toggle", "collapse");
         catHeaders[i].setAttribute("role", "button");
         catHeaders[i].setAttribute("area-expanded", "false");

@@ -49,3 +49,28 @@ body {
 	background-size: cover;
 	box-shadow: inset 0 0 15vw black;
 }
+
+.card-text {
+	font-size: 14px;
+}
+
+.plugin-col {
+	width: 35vw;
+	padding: 3vw;
+}
+
+.plugin-row {
+	margin: 0 !important;
+}
+
+.card {
+	min-width: 15vw;
+}
+
+.col-border-right {
+	border-right: 1px dotted rgba(255, 255, 255, 0.6);
+}
+
+.col-border-left {
+	border-left: 1px dotted rgba(255, 255, 255, 0.6);
+}
