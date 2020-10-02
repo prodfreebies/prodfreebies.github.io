@@ -63,7 +63,7 @@ function loadCards(template, inputFile, dataSelector, outputSelector) {
     });
 }
 
-$(document).ready(function () {
+function loadCardsToPage() {
     
     $('.category-header').click(function() {
         console.log('TEST');
@@ -113,4 +113,4 @@ $(document).ready(function () {
     loadCards(pluginTemplate, "data/samples.html", "#sample-lists > div", "#samples-lists-content");
     loadCards(pluginTemplate, "data/samples.html", "#sample-sites > div", "#samples-sites-content");
 
-});
+}
